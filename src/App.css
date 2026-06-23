@@ -24,6 +24,26 @@
   letter-spacing: -0.02em;
 }
 
+.bigger-boat {
+  display: block;
+  width: 100%;
+  margin-bottom: 1.25rem;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #0f766e;
+  background: #f0fdfa;
+  border: 1px solid #99f6e4;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.bigger-boat:hover {
+  color: #fff;
+  background: #0d9488;
+  border-color: #0d9488;
+}
+
 .todo-form {
   display: flex;
   gap: 0.5rem;
