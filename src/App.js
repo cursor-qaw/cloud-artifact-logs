@@ -25,10 +25,22 @@ function App() {
     setTodos((prev) => prev.filter((t) => t.id !== id));
   }
 
+  function handleBiggerBoatClick() {
+    console.log("You're gonna need a bigger boat.");
+  }
+
   return (
     <div className="app">
       <main className="todo-panel">
         <h1 className="todo-title">To-do</h1>
+
+        <button
+          type="button"
+          className="bigger-boat-button"
+          onClick={handleBiggerBoatClick}
+        >
+          Bigger boat
+        </button>
 
         <form className="todo-form" onSubmit={addTodo}>
           <label htmlFor="new-todo" className="visually-hidden">
