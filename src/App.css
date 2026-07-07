@@ -24,6 +24,25 @@
   letter-spacing: -0.02em;
 }
 
+.todo-boat {
+  display: block;
+  width: 100%;
+  margin-bottom: 1.25rem;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #1e3a5f;
+  background: #e0f2fe;
+  border: 1px solid #7dd3fc;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.todo-boat:hover {
+  background: #bae6fd;
+  border-color: #38bdf8;
+}
+
 .todo-form {
   display: flex;
   gap: 0.5rem;
