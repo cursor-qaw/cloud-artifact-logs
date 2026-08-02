@@ -24,6 +24,24 @@
   letter-spacing: -0.02em;
 }
 
+.boat-quote {
+  display: block;
+  margin: 0 0 1.25rem;
+  padding: 0.5rem 0.9rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #1e3a5f;
+  background: #e8f1fb;
+  border: 1px solid #bfd4ef;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.boat-quote:hover {
+  background: #d9e9f8;
+  border-color: #9dbfe6;
+}
+
 .todo-form {
   display: flex;
   gap: 0.5rem;
