@@ -76,6 +76,14 @@ function App() {
             ))}
           </ul>
         )}
+
+        <button
+          type="button"
+          className="todo-add bigger-boat-button"
+          onClick={() => console.log("You're gonna need a bigger boat.")}
+        >
+          Bigger boat
+        </button>
       </main>
     </div>
   );
