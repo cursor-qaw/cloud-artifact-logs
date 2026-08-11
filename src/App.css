@@ -103,6 +103,11 @@
   color: #94a3b8;
 }
 
+.bigger-boat-button {
+  margin-top: 1.25rem;
+  width: 100%;
+}
+
 .todo-delete {
   flex-shrink: 0;
   padding: 0.35rem 0.6rem;
