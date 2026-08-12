@@ -24,6 +24,10 @@
   letter-spacing: -0.02em;
 }
 
+.bigger-boat-button {
+  margin-bottom: 1.25rem;
+}
+
 .todo-form {
   display: flex;
   gap: 0.5rem;
