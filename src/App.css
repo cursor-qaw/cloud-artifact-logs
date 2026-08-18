@@ -66,6 +66,22 @@
   font-size: 0.95rem;
 }
 
+.boat-button {
+  margin-bottom: 1.25rem;
+  padding: 0.6rem 0.9rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #1e293b;
+  background: #e2e8f0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.boat-button:hover {
+  background: #cbd5e1;
+}
+
 .todo-list {
   list-style: none;
   margin: 0;
