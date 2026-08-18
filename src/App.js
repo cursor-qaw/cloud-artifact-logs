@@ -25,6 +25,10 @@ function App() {
     setTodos((prev) => prev.filter((t) => t.id !== id));
   }
 
+  function logBoatQuote() {
+    console.log("You're gonna need a bigger boat.");
+  }
+
   return (
     <div className="app">
       <main className="todo-panel">
@@ -47,6 +51,10 @@ function App() {
             Add
           </button>
         </form>
+
+        <button type="button" className="quote-button" onClick={logBoatQuote}>
+          Bigger boat
+        </button>
 
         {todos.length === 0 ? (
           <p className="todo-empty">No tasks yet. Add one above.</p>
