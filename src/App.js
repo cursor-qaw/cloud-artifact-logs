@@ -6,6 +6,7 @@ let nextId = 1;
 function App() {
   const [todos, setTodos] = useState([]);
   const [draft, setDraft] = useState('');
+  const boatMessage = "You're gonna need a bigger boat.";
 
   function addTodo(e) {
     e.preventDefault();
@@ -23,6 +24,10 @@ function App() {
 
   function removeTodo(id) {
     setTodos((prev) => prev.filter((t) => t.id !== id));
+  }
+
+  function logBoatMessage() {
+    console.log(boatMessage);
   }
 
   return (
@@ -47,6 +52,10 @@ function App() {
             Add
           </button>
         </form>
+
+        <button type="button" className="todo-quote" onClick={logBoatMessage}>
+          Need a bigger boat
+        </button>
 
         {todos.length === 0 ? (
           <p className="todo-empty">No tasks yet. Add one above.</p>

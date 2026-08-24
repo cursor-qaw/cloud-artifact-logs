@@ -15,3 +15,13 @@ test('adds a task and shows it in the list', async () => {
 
   expect(screen.getByText('Buy milk')).toBeInTheDocument();
 });
+
+test('logs the boat quote when the button is clicked', async () => {
+  const consoleSpy = jest.spyOn(console, 'log').mockImplementation(() => {});
+  render(<App />);
+
+  await userEvent.click(screen.getByRole('button', { name: /need a bigger boat/i }));
+
+  expect(consoleSpy).toHaveBeenCalledWith("You're gonna need a bigger boat.");
+  consoleSpy.mockRestore();
+});
