@@ -21,7 +21,7 @@ test('logs the bigger boat message when the button is clicked', async () => {
   render(<App />);
 
   await userEvent.click(
-    screen.getByRole('button', { name: /need a bigger boat/i })
+    screen.getByRole('button', { name: /bigger boat/i })
   );
 
   expect(logSpy).toHaveBeenCalledWith("You're gonna need a bigger boat.");

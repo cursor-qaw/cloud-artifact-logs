@@ -53,7 +53,7 @@ function App() {
           className="bigger-boat"
           onClick={() => console.log("You're gonna need a bigger boat.")}
         >
-          Need a bigger boat
+          Bigger boat
         </button>
 
         {todos.length === 0 ? (
