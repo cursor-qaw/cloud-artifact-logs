@@ -48,6 +48,14 @@ function App() {
           </button>
         </form>
 
+        <button
+          type="button"
+          className="bigger-boat"
+          onClick={() => console.log("You're gonna need a bigger boat.")}
+        >
+          Need a bigger boat
+        </button>
+
         {todos.length === 0 ? (
           <p className="todo-empty">No tasks yet. Add one above.</p>
         ) : (
