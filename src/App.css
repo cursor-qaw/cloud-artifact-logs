@@ -24,6 +24,24 @@
   letter-spacing: -0.02em;
 }
 
+.bigger-boat-btn {
+  display: block;
+  width: 100%;
+  margin: 0 0 1.25rem;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  background: #0d9488;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.bigger-boat-btn:hover {
+  background: #0f766e;
+}
+
 .todo-form {
   display: flex;
   gap: 0.5rem;
