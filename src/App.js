@@ -25,6 +25,10 @@ function App() {
     setTodos((prev) => prev.filter((t) => t.id !== id));
   }
 
+  function logBiggerBoat() {
+    console.log("You're gonna need a bigger boat.");
+  }
+
   return (
     <div className="app">
       <main className="todo-panel">
@@ -76,6 +80,14 @@ function App() {
             ))}
           </ul>
         )}
+
+        <button
+          type="button"
+          className="bigger-boat-button"
+          onClick={logBiggerBoat}
+        >
+          Bigger boat
+        </button>
       </main>
     </div>
   );
