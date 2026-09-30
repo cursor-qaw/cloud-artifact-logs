@@ -60,6 +60,24 @@
   background: #1d4ed8;
 }
 
+.bigger-boat {
+  display: block;
+  width: 100%;
+  margin-bottom: 1.25rem;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  background: #0f766e;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.bigger-boat:hover {
+  background: #0d9488;
+}
+
 .todo-empty {
   margin: 0;
   color: #64748b;
