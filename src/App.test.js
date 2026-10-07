@@ -7,6 +7,16 @@ test('renders to-do heading', () => {
   expect(screen.getByRole('heading', { name: /to-do/i })).toBeInTheDocument();
 });
 
+test('logs a bigger boat message when the button is clicked', async () => {
+  const log = jest.spyOn(console, 'log').mockImplementation(() => {});
+  render(<App />);
+
+  await userEvent.click(screen.getByRole('button', { name: /bigger boat/i }));
+
+  expect(log).toHaveBeenCalledWith("You're gonna need a bigger boat.");
+  log.mockRestore();
+});
+
 test('adds a task and shows it in the list', async () => {
   render(<App />);
 
