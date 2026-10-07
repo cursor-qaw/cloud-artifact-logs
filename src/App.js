@@ -76,6 +76,14 @@ function App() {
             ))}
           </ul>
         )}
+
+        <button
+          type="button"
+          className="bigger-boat"
+          onClick={() => console.log("You're gonna need a bigger boat.")}
+        >
+          You're gonna need a bigger boat.
+        </button>
       </main>
     </div>
   );
